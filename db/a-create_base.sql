@@ -1,0 +1,2 @@
+CREATE DATABASE atomskills_goppen ENCODING UTF8;
+CREATE USER atom_goppen PASSWORD 'AtomSkills2020';

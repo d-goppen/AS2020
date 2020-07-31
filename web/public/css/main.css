@@ -1,0 +1,196 @@
+    @font-face {
+        font-family: "Roboto";
+        src: url("../fonts/Roboto-Regular.ttf");
+    }
+    
+    @font-face {
+        font-family: "Roboto-Medium";
+        src: url("../fonts/Roboto-Medium.ttf");
+    }
+    
+    @font-face {
+        font-family: "Roboto-Light";
+        src: url("../fonts/Roboto-Light.ttf");
+    }
+    
+    @font-face {
+        font-family: "Roboto-Bold";
+        src: url("../fonts/Roboto-Bold.ttf");
+    }
+    
+    @font-face {
+        font-family: "Roboto-Black";
+        src: url("../fonts/Roboto-Bold.ttf");
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        text-decoration: none;
+    }
+    
+    .dronBack {
+        background-image: url('../img/flying-taxi.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    
+    .container {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(150, 0, 132, .5);
+    }
+    
+    .dronInput {
+        height: 40px;
+        border-radius: 5px;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    
+    .dronInputNarrow {
+        width: 160px;
+    }
+    
+    .dronInputMiddle {
+        width: 250px;
+    }
+    
+    .dronBtnNarrow {
+        width: 125px;
+    }
+    
+    .dronBtnMiddle {
+        width: 170px;
+    }
+    
+    .dronInputWide {
+        width: 350px;
+    }
+    
+    .dronBtn {
+        background-color: #00bfff;
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        /*font-size: 12px;*/
+        font-family: 'Roboto-Bold', sans-serif;
+    }
+    
+    .dronBtn:hover {
+        background-color: #0087b4;
+    }
+    
+    .dronBtnOk {
+        background-color: #7fff7f;
+        color: #202020;
+        border: 2px solid #ffffff;
+        /*font-size: 12px;*/
+        font-family: 'Roboto-Bold', sans-serif;
+    }
+    
+    .dronBtnOk:hover {
+        background-color: #128312;
+        color: #FFFFFF;
+    }
+    
+    .loginForm {
+        padding: 25px;
+        margin-left: 56px;
+        margin-top: 180px;
+    }
+    
+    .formCaption {
+        color: white;
+        font-family: 'Roboto-Bold', sans-serif;
+        margin-bottom: 20px;
+    }
+    
+    .inputField {
+        border: 2px solid #00bfff;
+        border-radius: 5px;
+        padding: 5px 30px;
+        color: #000000;
+        margin-top: 8px;
+        margin-bottom: 12px;
+    }
+    
+    .inputField::placeholder {
+        color: #CEC8C8;
+        font-size: 12px;
+        font-family: 'Roboto-Bold', sans-serif;
+    }
+    
+    .inputIcon {
+        position: absolute;
+        right: 0px;
+        padding: 21px 10px;
+    }
+    
+    .inputHeader {
+        color: #d0c9c9;
+        font-size: 12px;
+        font-family: 'Roboto-Bold';
+    }
+    
+    .inputGroup {
+        position: relative;
+    }
+    
+    .dronChkBox {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+    
+    .dronChkBox+label {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+    }
+    
+    .dronChkBox+label::before {
+        content: '';
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        margin-right: 8px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url('../icon-svg/input-checkbox.svg');
+    }
+    
+    .dronChkBox:hover+label::before,
+    .dronChkBox:focus+label::before {
+        background-image: url('../icon-svg/input-checkbox-focus.svg');
+    }
+    
+    .dronChkBox:checked+label::before {
+        background-image: url('../icon-svg/input-checkbox-check.svg');
+    }
+    
+    .aBtn {
+        display: block;
+        text-align: center;
+        line-height: 200%;
+        cursor: default;
+    }
+    
+    .windowMain {
+        background-color: #660066;
+    }
+    
+    .window1 {
+        background-color: #800080;
+    }
+    
+    .window2 {
+        background-color: #991199;
+    }
